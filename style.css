@@ -24,7 +24,12 @@ hr {
   border-radius: 10px 100px / 120px;
 }
 
-.box {
+.col .photo-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
   background-color: var(--background-color);
   border-radius: 10px;
   margin-bottom: 200px;
@@ -54,7 +59,7 @@ hr {
 .homepage-imgs {
   display: block;
   max-width: 70%;
-  margin: 20px auto;
+  margin: 15px auto 0;
   height: 33vh;
 }
 
@@ -62,7 +67,6 @@ hr {
   display: block;
   text-align: center;
   text-decoration: none;
-  padding: 20px 15px;
   margin-bottom: 20px;
   color: var(--main-color);
   font-size: 20px;
@@ -76,7 +80,6 @@ hr {
 
 .fa-mail-bulk {
   font-size: 35px;
-  margin-bottom: 20px;
 }
 
 .contact-link {
@@ -104,4 +107,87 @@ footer {
 
 .hosting-links:hover {
   color: var(--main-color);
+}
+
+@media (max-width: 992px) {
+  .profile-photo {
+    width: 200px;
+  }
+
+  .homepage h1 {
+    font-size: 45px;
+  }
+
+  .homepage h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage h1 {
+    text-align: center;
+  }
+
+  .homepage h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .homepage p {
+    font-size: 13px;
+  }
+
+  footer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    max-width: 500px;
+  }
+  .homepage p {
+    margin-bottom: 0px;
+  }
+
+  .homepage .page-links {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 536px) {
+  body {
+    max-width: 400px;
+  }
+
+  .fa-mail-bulk {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    border-radius: 0px;
+  }
+
+  .homepage h1 {
+    font-size: 35px;
+  }
+
+  .homepage h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .homepage p {
+    font-size: 10px;
+  }
+
+  .fa-mail-bulk {
+    font-size: 25px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
 }
