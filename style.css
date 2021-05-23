@@ -1,7 +1,107 @@
-h1 {
-  font-family: "Lily Script One", cursive;
+:root {
+  --title-font: "Lily Script One", cursive;
+  --content-font: "Poppins", sans-serif;
+  --main-color: #c9356c;
+  --secondary-color: #ff347f;
+  --background-color: #ffdde3;
+  --content-color: grey;
 }
 
-h3 {
-  font-family: "Poppins", sans-serif;
+body {
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 5px;
+  color: var(--secondary-color);
+}
+
+.profile-photo {
+  width: 250px;
+  border-radius: 10px 100px / 120px;
+}
+
+.box {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  margin-bottom: 200px;
+}
+
+.homepage h1 {
+  font-size: 65px;
+  margin-bottom: 30px;
+  color: var(--main-color);
+  font-family: var(--title-font);
+}
+
+.homepage h3 {
+  line-height: 1.5;
+  font-family: var(--content-font);
+  color: var(--content-color);
+}
+
+.homepage p {
+  text-align: center;
+  margin: 20px auto;
+  font-weight: bold;
+  font-family: var(--content-font);
+  color: var(--content-color);
+}
+
+.homepage-imgs {
+  display: block;
+  max-width: 70%;
+  margin: 20px auto;
+  height: 33vh;
+}
+
+.homepage .page-links {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-size: 20px;
+  font-family: var(--title-font);
+  transition: all 2ms ease-out;
+}
+
+.homepage .page-links:hover {
+  color: var(--content-color);
+}
+
+.fa-mail-bulk {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.contact-link {
+  display: block;
+  text-align: center;
+  transition: all 2ms ease-out;
+  color: var(--content-color);
+}
+
+.contact-link:hover {
+  color: var(--main-color);
+}
+
+footer {
+  text-align: center;
+  color: var(--content-color);
+}
+
+.hosting-links {
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 2ms ease-out;
+  color: var(--background-color);
+}
+
+.hosting-links:hover {
+  color: var(--main-color);
 }
