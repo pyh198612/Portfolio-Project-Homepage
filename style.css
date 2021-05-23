@@ -50,8 +50,8 @@ hr {
 
 .homepage p {
   text-align: center;
-  margin: 20px auto;
-  font-weight: bold;
+  font-size: 18px;
+  margin: 30px auto 0px;
   font-family: var(--content-font);
   color: var(--content-color);
 }
