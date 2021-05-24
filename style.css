@@ -8,7 +8,7 @@
 }
 
 body {
-  max-width: 1000px;
+  width: 1000px;
   margin: 100px auto;
 }
 
@@ -29,17 +29,26 @@ hr {
   justify-content: center;
 }
 
-.container {
+.background {
   background-color: var(--background-color);
   border-radius: 10px;
   margin-bottom: 200px;
 }
 
-.homepage h1 {
-  font-size: 65px;
-  margin-bottom: 30px;
+h1,
+h2 {
   color: var(--main-color);
   font-family: var(--title-font);
+}
+
+.homepage h1,
+.about h1 {
+  font-size: 65px;
+  margin-bottom: 30px;
+}
+
+.about h2 {
+  margin-bottom: 15px;
 }
 
 .homepage h3 {
@@ -48,12 +57,27 @@ hr {
   color: var(--content-color);
 }
 
-.homepage p {
-  text-align: center;
-  font-size: 18px;
-  margin: 30px auto 0px;
+p,
+li {
   font-family: var(--content-font);
   color: var(--content-color);
+  font-size: 18px;
+}
+
+li {
+  list-style-type: square;
+}
+
+.homepage p {
+  text-align: center;
+  margin: 30px auto 0px;
+}
+
+.about p,
+.about li {
+  line-height: 1.5;
+  text-align: justify;
+  margin-right: 35px;
 }
 
 .homepage-imgs {
@@ -61,6 +85,10 @@ hr {
   max-width: 70%;
   margin: 15px auto 0;
   height: 33vh;
+}
+
+.about .certificate-grid {
+  margin: 0;
 }
 
 .homepage .page-links {
@@ -82,6 +110,15 @@ hr {
   font-size: 35px;
 }
 
+.about .fa-globe-asia,
+.about .fa-briefcase,
+.about .fa-cogs {
+  color: var(--main-color);
+  display: block;
+  text-align: center;
+  font-size: 110px;
+}
+
 .contact-link {
   display: block;
   text-align: center;
@@ -91,6 +128,23 @@ hr {
 
 .contact-link:hover {
   color: var(--main-color);
+}
+
+.btn-branding {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  color: white;
+  font-family: var(--content-font);
+  padding: 10px 15px;
+  display: block;
+  margin: 15px 45px;
+  transition: all 2ms ease-out;
+}
+
+.btn-branding:hover {
+  background: white;
+  color: var(--secondary-color);
+  background: var(--background-color);
 }
 
 footer {
