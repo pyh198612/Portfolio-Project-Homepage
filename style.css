@@ -42,7 +42,8 @@ h2 {
 }
 
 .homepage h1,
-.about h1 {
+.about h1,
+.projects h1 {
   font-size: 65px;
   margin-bottom: 30px;
 }
@@ -68,13 +69,15 @@ li {
   list-style-type: square;
 }
 
-.homepage p {
+.homepage p,
+.projects p {
   text-align: center;
   margin: 30px auto 0px;
 }
 
 .about p,
-.about li {
+.about li,
+.projects .app-description {
   line-height: 1.5;
   text-align: justify;
   margin-right: 35px;
@@ -147,6 +150,10 @@ li {
   background: var(--background-color);
 }
 
+.projects .app-btn {
+  width: 250px;
+}
+
 footer {
   text-align: center;
   color: var(--content-color);
@@ -163,21 +170,54 @@ footer {
   color: var(--main-color);
 }
 
+.projects .api-link {
+  transition: all 2ms ease-out;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.projects .api-link:hover {
+  color: var(--content-color);
+  text-decoration: underline;
+}
+
 @media (max-width: 992px) {
+  body {
+    width: 700px;
+  }
   .profile-photo {
     width: 200px;
   }
 
-  .homepage h1 {
+  .homepage h1,
+  .about h1,
+  .projects h1 {
     font-size: 45px;
   }
 
   .homepage h3 {
     font-size: 20px;
   }
+
+  .about .fa-globe-asia,
+  .about .fa-briefcase,
+  .about .fa-cogs {
+    font-size: 100px;
+  }
+
+  .about li {
+    text-align: left;
+  }
+
+  .about a {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 768px) {
+  body {
+    width: 550px;
+  }
   .homepage h1 {
     text-align: center;
   }
@@ -191,14 +231,46 @@ footer {
     font-size: 13px;
   }
 
+  .about p,
+  .about li {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
   footer {
     font-size: 13px;
   }
+
+  .about .container {
+    padding: 0 40px;
+    text-align: center;
+  }
+}
+.about .fa-globe-asia,
+.about .fa-briefcase,
+.about .fa-cogs {
+  font-size: 90px;
+}
+
+.about img {
+  width: 400px;
+  display: block;
+  margin: 0 auto 20px;
+}
+.about a {
+  font-size: 12px;
+  width: 200px;
+  display: block;
+  margin: 0 auto 60px;
 }
 
 @media (max-width: 576px) {
   body {
-    max-width: 500px;
+    width: 500px;
   }
   .homepage p {
     margin-bottom: 0px;
@@ -207,24 +279,51 @@ footer {
   .homepage .page-links {
     margin-bottom: 0px;
   }
+
+  .about .container {
+    padding: 0 40px;
+    text-align: center;
+  }
+
+  .about p {
+    text-align: center;
+    margin: 0;
+  }
+
+  .about li {
+    margin: 0;
+  }
 }
 
 @media (max-width: 536px) {
   body {
-    max-width: 400px;
+    width: 400px;
   }
 
   .fa-mail-bulk {
     font-size: 30px;
   }
+
+  .about h1 {
+    font-size: 40px;
+  }
+
+  .about h2 {
+    font-size: 22px;
+  }
+  .about p,
+  .about li {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 400px) {
-  .container {
+  .background {
     border-radius: 0px;
   }
 
-  .homepage h1 {
+  .homepage h1,
+  .about h1 {
     font-size: 35px;
   }
 
