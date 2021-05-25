@@ -90,10 +90,6 @@ li {
   height: 33vh;
 }
 
-.about .certificate-grid {
-  margin: 0;
-}
-
 .homepage .page-links {
   display: block;
   text-align: center;
@@ -120,6 +116,14 @@ li {
   display: block;
   text-align: center;
   font-size: 110px;
+}
+
+.about .certificate-grid {
+  margin: 0;
+}
+
+.projects-grid {
+  padding: 48px;
 }
 
 .contact-link {
@@ -152,6 +156,7 @@ li {
 
 .projects .app-btn {
   width: 250px;
+  margin-left:0px;
 }
 
 footer {
@@ -199,6 +204,18 @@ footer {
     font-size: 20px;
   }
 
+  .projects h2 {
+    font-size: 25px;
+  }
+
+  .projects p {
+    font-size: 16px;
+  }
+
+  .projects-grid {
+    padding: 36px;
+  }
+
   .about .fa-globe-asia,
   .about .fa-briefcase,
   .about .fa-cogs {
@@ -209,6 +226,9 @@ footer {
     text-align: left;
   }
 
+  .projects a {
+    font-size: 14px;
+  }
   .about a {
     font-size: 12px;
   }
@@ -218,8 +238,17 @@ footer {
   body {
     width: 550px;
   }
-  .homepage h1 {
+
+  .homepage h1,
+  .about h1,
+  .projects h1 {
     text-align: center;
+  }
+
+  .about h2,
+  .projects h2 {
+    text-align: center;
+    font-size: 27px;
   }
 
   .homepage h3 {
@@ -227,18 +256,20 @@ footer {
     text-align: center;
   }
 
-  .homepage p {
-    font-size: 13px;
-  }
-
+  .homepage p,
   .about p,
   .about li {
     font-size: 16px;
-    margin: 0;
   }
 
-  .about p {
+  .about p,
+  .about li{
+    margin: 0;
     text-align: center;
+  }
+
+  .about li {
+    text-align: left;
   }
 
   footer {
@@ -249,23 +280,35 @@ footer {
     padding: 0 40px;
     text-align: center;
   }
-}
-.about .fa-globe-asia,
-.about .fa-briefcase,
-.about .fa-cogs {
-  font-size: 90px;
-}
 
-.about img {
-  width: 400px;
-  display: block;
-  margin: 0 auto 20px;
-}
-.about a {
-  font-size: 12px;
-  width: 200px;
-  display: block;
-  margin: 0 auto 60px;
+  .about .fa-globe-asia,
+  .about .fa-briefcase,
+  .about .fa-cogs {
+    font-size: 90px;
+  }
+
+  .about img {
+    width: 400px;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .about a, .projects .app-btn  {
+    font-size: 12px;
+    width: 200px;
+    display: block;
+    margin: 0 auto 60px;
+  }
+
+  .projects-grid {
+      padding-top: 0px;
+      padding-bottom:0px;
+  }
+
+
+.projects .app-description {
+    text-align:center;
+    margin-right:0px;
 }
 
 @media (max-width: 576px) {
@@ -304,15 +347,15 @@ footer {
     font-size: 30px;
   }
 
-  .about h1 {
+  .about h1, .projects h1 {
     font-size: 40px;
   }
 
-  .about h2 {
+  .about h2, .projects h2 {
     font-size: 22px;
   }
   .about p,
-  .about li {
+  .about li, .projects p {
     font-size: 13px;
   }
 }
@@ -323,7 +366,7 @@ footer {
   }
 
   .homepage h1,
-  .about h1 {
+  .about h1, .projects h1 {
     font-size: 35px;
   }
 
