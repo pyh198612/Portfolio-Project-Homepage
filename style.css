@@ -5,6 +5,7 @@
   --secondary-color: #ff347f;
   --background-color: #ffdde3;
   --content-color: grey;
+  --transition: all 100ms ease-in-out;
 }
 
 body {
@@ -19,18 +20,55 @@ hr {
   color: var(--secondary-color);
 }
 
+nav ul {
+  padding: 0;
+  margin: 0;
+}
 
+nav li {
+  display: inline;
+  list-style: none;
+  font-size: 15px;
+  font-family: var(--content-font);
+  margin-left: 12px;
+}
 
+nav li.active a {
+  color: var(--main-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--content-color);
+  transition: var(--transition);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+nav .logo {
+  font-family: var(--title-font);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.navigation-bar {
+  background: #f4f5f5;
+  padding: 10px;
+  color: var(--main-color);
+}
 
 h1,
-h2, h3 {
-    color: var(--main-color);
-    font-family: var(--title-font);
+h2,
+h3 {
+  color: var(--main-color);
+  font-family: var(--title-font);
 }
 
 h1 {
-    font-size: 65px;
-    margin-bottom: 30px;
+  font-size: 65px;
+  margin-bottom: 30px;
 }
 
 p,
@@ -41,38 +79,41 @@ li {
 }
 
 li {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .background {
-    background-color: var(--background-color);
-    border-radius: 10px;
-    margin-bottom: 200px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  margin-bottom: 200px;
 }
 
-.fa-mail-bulk, .fa-home {
-    font-size: 35px;
+.fa-mail-bulk,
+.fa-home {
+  font-size: 35px;
 }
 
-.fa-envelope-open-text, .fa-linkedin, .contact a {
-   color: var(--content-color);
-   padding-right: 10px;
-   font-size: 20px;
+.fa-envelope-open-text,
+.fa-linkedin,
+.contact a {
+  color: var(--content-color);
+  padding-right: 10px;
+  font-size: 20px;
 }
 
 .contact-link {
-    display: block;
-    text-align: center;
-    transition: all 2ms ease-out;
-    color: var(--content-color);
+  display: block;
+  text-align: center;
+  transition: var(--transition);
+  color: var(--content-color);
 }
 
 .contact-link:hover {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .btn-branding {
-    border: 1px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   background: var(--secondary-color);
   color: white;
   font-family: var(--content-font);
@@ -80,7 +121,7 @@ li {
   padding: 10px 15px;
   display: block;
   margin: 15px 45px;
-  transition: all 2ms ease-out;
+  transition: var(--transition);
 }
 
 .btn-branding:hover {
@@ -97,7 +138,7 @@ footer {
 .hosting-links {
   text-decoration: none;
   font-weight: 600;
-  transition: all 2ms ease-out;
+  transition: var(--transition);
   color: var(--background-color);
 }
 
@@ -110,18 +151,17 @@ footer {
   border-radius: 10px 100px / 120px;
 }
 
-
 .homepage h3 {
-    line-height: 1.5;
-    font-family: var(--content-font);
-    color: var(--content-color);
+  line-height: 1.5;
+  font-family: var(--content-font);
+  color: var(--content-color);
 }
 
-
 .homepage p,
-.projects p, .contact p {
-    text-align: center;
-    margin: 30px 20px 0px;
+.projects p,
+.contact p {
+  text-align: center;
+  margin: 30px 20px 0px;
 }
 
 .homepage-imgs {
@@ -139,7 +179,7 @@ footer {
   color: var(--main-color);
   font-size: 20px;
   font-family: var(--title-font);
-  transition: all 2ms ease-out;
+  transition: var(--transition);
 }
 
 .homepage .page-links:hover {
@@ -155,10 +195,9 @@ footer {
 .projects .app-description {
   line-height: 1.5;
   text-align: justify;
-  margin-left:0px;
+  margin-left: 0px;
   margin-right: 35px;
 }
-
 
 .about .fa-globe-asia,
 .about .fa-briefcase,
@@ -177,15 +216,13 @@ footer {
   padding: 48px;
 }
 
-
 .projects .app-btn {
   width: 250px;
-  margin-left:0px;
+  margin-left: 0px;
 }
 
-
 .projects .api-link {
-  transition: all 2ms ease-out;
+  transition: var(--transition);
   color: var(--secondary-color);
   text-decoration: none;
 }
@@ -196,20 +233,20 @@ footer {
 }
 
 .contact a {
-text-decoration: none;
+  text-decoration: none;
 }
 
 .contact a:hover {
-color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .contact .contact-details {
-    text-align:center;
+  text-align: center;
 }
 
 .contact .get-in-touch {
-    color:var(--secondary-color);
-    font-weight: bold;
+  color: var(--secondary-color);
+  font-weight: bold;
 }
 
 @media (max-width: 992px) {
@@ -220,7 +257,7 @@ color:var(--secondary-color);
     width: 200px;
   }
 
- h1 {
+  h1 {
     font-size: 45px;
   }
 
@@ -232,13 +269,14 @@ color:var(--secondary-color);
     font-size: 25px;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 16px;
   }
-  
+
   li {
-     text-align: left;
-   }
+    text-align: left;
+  }
   .projects-grid {
     padding: 36px;
   }
@@ -249,11 +287,10 @@ color:var(--secondary-color);
     font-size: 100px;
   }
 
-  .projects a, .about a  {
+  .projects a,
+  .about a {
     font-size: 14px;
   }
-  
- 
 }
 
 @media (max-width: 768px) {
@@ -265,26 +302,27 @@ color:var(--secondary-color);
     text-align: center;
   }
 
-h2 {
+  h2 {
     text-align: center;
     font-size: 27px;
   }
 
-h3 {
+  h3 {
     font-size: 18px;
     text-align: center;
   }
-  
-    footer {
-      font-size: 13px;
-    }
 
- p,li {
+  footer {
+    font-size: 13px;
+  }
+
+  p,
+  li {
     font-size: 16px;
   }
 
   .about p,
-  .about li{
+  .about li {
     margin: 0;
     text-align: center;
   }
@@ -310,7 +348,8 @@ h3 {
     margin: 0 auto 20px;
   }
 
-  .about a, .projects .app-btn  {
+  .about a,
+  .projects .app-btn {
     font-size: 12px;
     width: 200px;
     display: block;
@@ -318,24 +357,24 @@ h3 {
   }
 
   .projects-grid {
-      padding-top: 0px;
-      padding-bottom:0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
-
-.projects .app-description {
-    text-align:center;
-    margin-right:0px;
+  .projects .app-description {
+    text-align: center;
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 576px) {
   body {
     width: 500px;
   }
-  .homepage p, .homepage .page-links  {
+  .homepage p,
+  .homepage .page-links {
     margin-bottom: 0px;
   }
-
 
   .about .container {
     padding: 0 40px;
@@ -350,8 +389,6 @@ h3 {
   .about li {
     margin: 0;
   }
-
-
 }
 
 @media (max-width: 536px) {
@@ -359,22 +396,24 @@ h3 {
     width: 400px;
   }
 
-  
   h1 {
-      font-size: 40px;
-    }
-    
-h2 {
-        font-size: 22px;
-    }
+    font-size: 40px;
+  }
 
-   p,li, .contact a {
-        font-size: 14px;
-    }
+  h2 {
+    font-size: 22px;
+  }
 
-    .fa-mail-bulk, .fa-home {
-      font-size: 25px;
-    }
+  p,
+  li,
+  .contact a {
+    font-size: 14px;
+  }
+
+  .fa-mail-bulk,
+  .fa-home {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -387,10 +426,9 @@ h2 {
   }
 
   .homepage h3 {
-    margin:0 20px;
+    margin: 0 20px;
     text-align: center;
   }
-
 
   footer {
     font-size: 10px;
