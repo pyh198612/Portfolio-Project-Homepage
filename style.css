@@ -20,6 +20,11 @@ hr {
   color: var(--secondary-color);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav ul {
   padding: 0;
   margin: 0;
@@ -370,6 +375,11 @@ footer {
 @media (max-width: 576px) {
   body {
     width: 500px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
   }
   .homepage p,
   .homepage .page-links {
