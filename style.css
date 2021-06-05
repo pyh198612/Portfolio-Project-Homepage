@@ -5,6 +5,7 @@
   --secondary-color: #ff347f;
   --background-color: #ffdde3;
   --content-color: grey;
+  --navigation-bar-color: #f4f5f5;
   --transition: all 100ms ease-in-out;
 }
 
@@ -59,7 +60,7 @@ nav .logo {
 }
 
 .navigation-bar {
-  background: #f4f5f5;
+  background: var(--navigation-bar-color);
   padding: 10px;
   color: var(--main-color);
 }
@@ -96,6 +97,9 @@ li {
 .fa-mail-bulk,
 .fa-home {
   font-size: 35px;
+  background: var(--navigation-bar-color);
+  padding: 20px;
+  border-radius: 50%;
 }
 
 .fa-envelope-open-text,
@@ -140,15 +144,15 @@ footer {
   color: var(--content-color);
 }
 
-.hosting-links {
+footer .hosting-links {
   text-decoration: none;
   font-weight: 600;
   transition: var(--transition);
-  color: var(--background-color);
+  color: var(--main-color);
 }
 
-.hosting-links:hover {
-  color: var(--main-color);
+footer .hosting-links:hover {
+  color: var(--secondary-color);
 }
 
 .homepage .profile-photo {
@@ -381,6 +385,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
   }
+
   .homepage p,
   .homepage .page-links {
     margin-bottom: 0px;
